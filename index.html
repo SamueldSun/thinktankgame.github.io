@@ -93,6 +93,8 @@
           <p>This game literally makes people focus very intensely to be able to control the tank. By creating a game, we are able <br />
             to drive attention from players away from outside worries, which is often the number one source of stress. Players also <br />
             practice having more control over their thoughts through the strategic use of being focused and unfocused within the game.</p>
+          <p>As Think Tank is a multiplayer game, the experience of practicing concentration and meditating is a lot more enjoyable <br />
+            and allows people to share it with others.</p>
           <img src="http://tanksforplaying.net/IMG_5783.JPG" alt="Two players playing Think Tank"/>
         </div>
       </section>
@@ -101,8 +103,8 @@
         <div class="my-auto">
           <h2>Inspiration</h2>
           <p>It has always been a part of human imagination to be able to control things solely with the mind.</p>
-          <p>When we found that EEG sensor technology has become more accessible through products like the Muse headband, we were excited<br />
-            to be able to try it out, and try to make fiction reality.</p>
+          <p>When we found that electroencephalography (EEG) technology has become more accessible through products like the Muse <br />
+            headband, we were excited to be able to try it out, and try to make fiction reality.</p>
           <p>At this hackathon, we aimed to develop a unique and engaging hack that would highlight the strengths of the Muse headband and<br />
             add to its suite of stress relief and meditation tools.</p>
         </div>
@@ -111,7 +113,19 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="how">
         <div class="my-auto">
           <h2 class="mb-5">How We Built It</h2>
-          <p>Nani? * 3</p>
+          <p>Think Tank was built in Unity3D, programmed in C#, and implemented the Muse headband.</p>
+          <p>A series of tools were used to go from brain waves from the Muse to game inputs within the Unity game.</p>
+          <ul>
+            <li>First, the Muse headbands were connected via bluetooth to the computer.</li>
+            <li>Next, Muse-IO (command line tool) gathered data from the bluetooth device and outputted it to a TCP port.</li>
+            <li>This data would be gathered by Muse Lab, and only a few important values, including EEG, Concentration, and Jaw Clench, <br />
+              were passed on to a UDP port via Open Sound Control (OSC).</li>
+            <li>To have two Muse active at the same time, two instances of Muse-IO and Muse Lab needed to be run at the same time.</li>
+            <li>Finally, the OSC data would be received by an OSC script in Unity on the UDP port and processed for usage in game. Credits <br />
+              go to Thomas Fredericks for the OSC Unity scripts.</li>
+          </ul>
+          <p>Assets used in the Unity project came only from the “Tanks! Tutorial” (by Unity) sample project.</p>
+
           <img src="http://tanksforplaying.net/IMG_5792.JPG" alt="Muse Headbands"/>
         </div>
       </section>
@@ -119,21 +133,29 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="challenges">
         <div class="my-auto">
           <h2 class="mb-5">Challenges We Ran Into</h2>
-          <p>Nani? * 4</p>
+          <p>We encountered several problems throughout the process of creating this hack.</p>
+          <p>The main challenge that we ran into was trying to figure out how to interpret the data that was outputted by the Muse. <br />
+            There seemed to be no pattern to the brain wave data from the sensor.</p>
+          <p>Another challenge that was encountered was the process of simultaneously pairing 2 Muse to a single computer at the same <br />
+            time. When one of them connected, it would cause the other to disconnect.</p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="lessons">
         <div class="my-auto">
           <h2 class="mb-5">Lessons We Learned</h2>
-          <p>Nani? * 5</p>
+          <p>Having never used Muse before, we learned a lot about how to connect and use the headbands, and how to interpret the <br />
+            outputted data and apply it to a fun game.</p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="accomplishments">
         <div class="my-auto">
           <h2 class="mb-5">Accomplishments</h2>
-          <p>Nani? * 6</p>
+          <p>We are proud that we were able to overcome all of the challenges that we encountered throughout the development of this <br />
+            hack, and since we had not used Muse before, that we were able to learn how to use and develop for this new technology in <br />
+            a relatively short amount of time.</p>
+          <p>We are also proud that we were able to get a working product in end that is both satisfying and enjoyable.</p>
           <img src="http://tanksforplaying.net/IMG_5795.JPG" alt"Two players playing Think Tank" />
         </div>
       </section>
@@ -141,14 +163,22 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="next">
         <div class="my-auto">
           <h2 class="mb-5">What's Next?</h2>
-          <p>Nani? * 7</p>
+          <p>In the future, we would like to continue developing the game and improving the control system!</p>
+          <p>By further analyzing the data that comes from the sensor we may be able to find other ways players may be able to send <br />
+            messages aside from concentration and jaw clenching.</p>
+          <p>We would also like to try implementing other immersive game tech, like virtual or augmented reality, or motion sensing <br />
+            to create a whole new experience.</p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="built">
         <div class="my-auto">
           <h2 class="mb-5">Built With</h2>
-          <p>Nani? * 8</p>
+          <ul>
+            <li>Unity</li>
+            <li>Muse</li>
+            <li>C#</li>
+          </ul>
         </div>
       </section>
 <!--
