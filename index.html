@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ThinkTank</title>
+    <title>Think Tank</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">Think Tank</span>
         <span class="d-none d-lg-block">
           <img src="http://tanksforplaying.net/ThinkTank.png" alt="Think Tank logo" width="200" height="69" />
           <p>
@@ -87,13 +87,17 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="what">
         <div class="my-auto">
           <h2>What is Think Tank?</h2>
-          <p>Think Tank is a two-player co-op game where players use Muse headbands to control a tank in a map, where they attempt <br />
-            to navigate through mazes and destroy enemy tanks solely through their mind, without physically moving any controls. <br /></p>
-          <p>This game literally makes people focus very intensely to be able to control the tank. By creating a game, we are able <br />
-            to drive attention from players away from outside worries, which is often the number one source of stress. Players also <br />
-            practice having more control over their thoughts through the strategic use of being focused and unfocused within the game.</p>
-          <p>As Think Tank is a multiplayer game, the experience of practicing concentration and meditating is a lot more enjoyable <br />
-            and allows people to share it with others.</p>
+          <p>
+            Think Tank is a two-player co-op game where players use Muse headbands to control a tank in a map, where they attempt
+            to navigate through mazes and destroy enemy tanks solely through their mind, without physically moving any controls. <br>
+            <br>
+            This game literally makes people focus very intensely to be able to control the tank. By creating a game, we are able
+            to drive attention from players away from outside worries, which is often the number one source of stress. Players also
+            practice having more control over their thoughts through the strategic use of being focused and unfocused within the game.<br>
+            <br>
+            As Think Tank is a multiplayer game, the experience of practicing concentration and meditating is a lot more enjoyable
+            and allows people to share it with others.
+          </p>
           <img src="http://tanksforplaying.net/IMG_5783.JPG" alt="Two players playing Think Tank"/>
         </div>
       </section>
@@ -101,29 +105,39 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="inspiration">
         <div class="my-auto">
           <h2>Inspiration</h2>
-          <p>It has always been a part of human imagination to be able to control things solely with the mind.</p>
-          <p>When we found that electroencephalography (EEG) technology has become more accessible through products like the Muse <br />
-            headband, we were excited to be able to try it out, and try to make fiction reality.</p>
-          <p>At this hackathon, we aimed to develop a unique and engaging hack that would highlight the strengths of the Muse headband and<br />
-            add to its suite of stress relief and meditation tools.</p>
+          <p>
+            It has always been a part of human imagination to be able to control things solely with the mind.
+            <br>
+            <br>
+            When we found that electroencephalography (EEG) technology has become more accessible through products like the Muse
+            headband, we were excited to be able to try it out, and try to make fiction reality.
+            <br>
+            <br>
+            At this hackathon, we aimed to develop a unique and engaging hack that would highlight the strengths of the Muse headband and
+            add to its suite of stress relief and meditation tools.
+          </p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="how">
         <div class="my-auto">
           <h2 class="mb-5">How We Built It</h2>
-          <p>Think Tank was built in Unity3D, programmed in C#, and implemented the Muse headband.</p>
-          <p>A series of tools were used to go from brain waves from the Muse to game inputs within the Unity game.</p>
+          <p>
+            Think Tank was built in Unity3D, programmed in C#, and implemented the Muse headband. <br>
+            A series of tools were used to go from brain waves from the Muse to game inputs within the Unity game.
+          </p>
           <ul>
             <li>First, the Muse headbands were connected via bluetooth to the computer.</li>
             <li>Next, Muse-IO (command line tool) gathered data from the bluetooth device and outputted it to a TCP port.</li>
-            <li>This data would be gathered by Muse Lab, and only a few important values, including EEG, Concentration, and Jaw Clench, <br />
+            <li>This data would be gathered by Muse Lab, and only a few important values, including EEG, Concentration, and Jaw Clench,
               were passed on to a UDP port via Open Sound Control (OSC).</li>
             <li>To have two Muse active at the same time, two instances of Muse-IO and Muse Lab needed to be run at the same time.</li>
-            <li>Finally, the OSC data would be received by an OSC script in Unity on the UDP port and processed for usage in game. Credits <br />
+            <li>Finally, the OSC data would be received by an OSC script in Unity on the UDP port and processed for usage in game. Credits
               go to Thomas Fredericks for the OSC Unity scripts.</li>
           </ul>
-          <p>Assets used in the Unity project came only from the “Tanks! Tutorial” (by Unity) sample project.</p>
+          <p>
+            Assets used in the Unity project came only from the “Tanks! Tutorial” (by Unity) sample project.
+          </p>
 
           <img src="http://tanksforplaying.net/IMG_5792.JPG" alt="Muse Headbands"/>
         </div>
@@ -132,11 +146,13 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="challenges">
         <div class="my-auto">
           <h2 class="mb-5">Challenges We Ran Into</h2>
-          <p>We encountered several problems throughout the process of creating this hack.</p>
-          <p>The main challenge that we ran into was trying to figure out how to interpret the data that was outputted by the Muse. <br />
-            There seemed to be no pattern to the brain wave data from the sensor.</p>
-          <p>Another challenge that was encountered was the process of simultaneously pairing 2 Muse to a single computer at the same <br />
-            time. When one of them connected, it would cause the other to disconnect.</p>
+          <p>
+            We encountered several problems throughout the process of creating this hack.<br>
+            The main challenge that we ran into was trying to figure out how to interpret the data that was outputted by the Muse.
+            There seemed to be no pattern to the brain wave data from the sensor.<br>
+            Another challenge that was encountered was the process of simultaneously pairing 2 Muse to a single computer at the same
+            time. When one of them connected, it would cause the other to disconnect.
+          </p>
           <img src="http://tanksforplaying.net/Screenshot%202.png" alt="Brain wave data"/>
         </div>
       </section>
@@ -144,18 +160,22 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="lessons">
         <div class="my-auto">
           <h2 class="mb-5">Lessons We Learned</h2>
-          <p>Having never used Muse before, we learned a lot about how to connect and use the headbands, and how to interpret the <br />
-            outputted data and apply it to a fun game.</p>
+          <p>
+            Having never used Muse before, we learned a lot about how to connect and use the headbands, and how to interpret the
+            outputted data and apply it to a fun game.
+          </p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="accomplishments">
         <div class="my-auto">
           <h2 class="mb-5">Accomplishments</h2>
-          <p>We are proud that we were able to overcome all of the challenges that we encountered throughout the development of this <br />
-            hack, and since we had not used Muse before, that we were able to learn how to use and develop for this new technology in <br />
-            a relatively short amount of time.</p>
-          <p>We are also proud that we were able to get a working product in end that is both satisfying and enjoyable.</p>
+          <p>
+            We are proud that we were able to overcome all of the challenges that we encountered throughout the development of this
+            hack, and since we had not used Muse before, that we were able to learn how to use and develop for this new technology in
+            a relatively short amount of time.<br>
+            We are also proud that we were able to get a working product in end that is both satisfying and enjoyable.
+          </p>
           <img src="http://tanksforplaying.net/IMG_5795.JPG" alt"Two players playing Think Tank" />
         </div>
       </section>
@@ -163,184 +183,18 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="next">
         <div class="my-auto">
           <h2 class="mb-5">What's Next?</h2>
-          <p>In the future, we would like to continue developing the game and improving the control system!</p>
-          <p>By further analyzing the data that comes from the sensor we may be able to find other ways players may be able to send <br />
-            messages aside from concentration and jaw clenching.</p>
-          <p>We would also like to try implementing other immersive game tech, like virtual or augmented reality, or motion sensing <br />
-            to create a whole new experience.</p>
+          <p>
+            In the future, we would like to continue developing the game and improving the control system!<br>
+            <br>
+            By further analyzing the data that comes from the sensor we may be able to find other ways players may be able to send
+            messages aside from concentration and jaw clenching. <br>
+            <br>
+            We would also like to try implementing other immersive game tech, like virtual or augmented reality, or motion sensing
+            to create a whole new experience. <br>
+          </p>
         </div>
       </section>
 
-<!--
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2002 - May 2006</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section>
--->
     </div>
 
     <!-- Bootstrap core JavaScript -->
